@@ -1,0 +1,57 @@
+site_name: "RGPD"
+extra:
+    version: 1.0
+nav:
+    - Le Règlement Général sur la Protection des Données - RGPD: index.md
+    - CHAPITRE I - Dispositions générales: 1.md
+    - CHAPITRE II - Principes: 2.md
+    - CHAPITRE III - Droits de la personne concernée: 3.md
+    - CHAPITRE IV - Responsable du traitement et sous-traitant: 4.md
+    - CHAPITRE V - Transferts de données à caractère personnel vers des pays tiers ou à des organisations internationales: 5.md
+    - CHAPITRE VI - Autorités de contrôle indépendantes: 6.md
+    - CHAPITRE VII - Coopération et cohérence: 7.md
+    - CHAPITRE VIII - Voies de recours, responsabilité et sanctions: 8.md
+    - CHAPITRE IX - Dispositions relatives à des situations particulières de traitement: 9.md
+    - CHAPITRE X - Actes délégués et actes d'exécution: 10.md
+    - CHAPITRE XI - Dispositions finales: 11.md
+theme:
+  language: fr
+  name: material
+  features:
+    - instant
+  palette:
+    primary: 'primary'
+    accent: 'blue'
+  font:
+    text: 'Roboto'
+    code: 'Roboto Mono'
+  include_search_page: false
+  search_index_only: true
+plugins:
+  - search:
+      prebuild_index: true
+      separator: '[\s\-\.]+'
+      lang:
+         - fr
+  - awesome-pages
+use_directory_urls: false
+markdown_extensions:
+  - admonition
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tabbed
+  - pymdownx.tilde
